@@ -1,0 +1,40 @@
+while True:
+    num1 = int(input("Zadejte první člen: "))
+    num2 = int(input("Zadejte druhý člen: "))
+    """
+    print("1. Součet")
+    print("2. Rozdíl")
+    print("3. Součin")
+    print("4. Podíl")
+    """
+    print("1. Součet \n2. Rozdíl \n3. Součin \n4. Podíl")
+ 
+    operace = int(input("Vyberte číslo početní operace, kterou chcete provést: "))
+ 
+    match operace:
+        case 1:
+            soucet = num1 + num2
+            print("Součet je: " + str(soucet))
+        case 2:
+            rozdil = num1 - num2
+            print("Rozdíl je: " + str(rozdil))
+        case 3:
+            soucin = num1 * num2
+            print("Součin je: " + str(soucin))
+        case 4:
+            if num2 == 0:
+             print("Nelze dělit 0")
+            else:
+             podil = num1 / num2
+            print("Podíl je: " + str(podil))
+        case _:
+          print("Takovou operaci nemáme")
+       
+    konec = input("Přejete siukončit program? Y/N ")
+    if konec == "Y" or konec == "y":
+        break
+    elif konec == "N" or konec == "n":
+        print("Další výpočet: ")
+    else:
+        print("Neplatné zadání, program se zhroutí")
+        break
