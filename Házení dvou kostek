@@ -9,4 +9,4 @@ while True:
     print(str(kostka1) + " " +str(kostka2))
     if kostka1 ==kostka2:
         break
-    print("Počet hodů nutných k úspěchu byl:" + str(counter))
+print("Počet hodů nutných k úspěchu byl:" + str(counter))
