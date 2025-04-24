@@ -1,0 +1,17 @@
+list = ["pomeranč", "jablko", "meloun", "štestky", "citrón"]
+print(list)
+print(len(list))
+print(list[2])
+#print(list[int(input("Zadejte pozici"))])
+duplist = list[2:4]
+print(list)
+print(duplist)
+
+if "jablko" in list:
+    print("Jablko tam je")
+
+list[-2] = "Samice hrabáče"
+print(list)
+
+list.append("hruška")
+print(list)
