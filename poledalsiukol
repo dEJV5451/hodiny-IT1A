@@ -1,0 +1,23 @@
+for i in range(10):
+    pole = [i]
+    for i in range(len(pole)):
+        print(i, pole[i]) #pod sebe
+        
+#arr = list(range(1,1000))       
+#print(arr)
+
+brambory = []
+for plechovka in range(10):
+    brambory.append(plechovka)
+print(brambory) #vedle sebe
+
+a = 3
+b = 8
+
+pom = brambory[1]
+brambory[a]=brambory[b]
+brambory[b] = pom
+print(brambory) #vymění dvě pozice
+
+pole[a], pole[b] = pole[b], pole[a] #vymění dvě pozice
+print[pole]
