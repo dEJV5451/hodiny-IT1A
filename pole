@@ -1,0 +1,77 @@
+mylist = ["pomeranč", "meloun", "citron", "kumqat", "jablko", "švestka"]
+print(mylist)
+print(len(mylist))
+print(mylist[3])
+#print(mylist[int(input("Zadejte pozici"))])
+duplist = mylist[2:4]
+print(mylist)
+print(duplist)
+ 
+if "jablko" in mylist:
+    print("jablko tam je")
+ 
+mylist[-2] = "samice hrabáče"
+print(mylist)
+ 
+mylist.append("grepfruit") #Prodlouží pole o 1 "Název_prvku"
+print(mylist)
+ 
+mylist.insert(1, "ananas") #Přidá na danou pozici "Název_prvku"
+print(mylist)
+ 
+mylist2 = ["paprika", "mrkev", "okurka"] 
+mylist.extend(mylist2) #prodlouží mylist o další list
+print(mylist)
+ 
+mylist.remove("ananas") #odstraní z pole "Název_prvku"
+print(mylist)
+ 
+mylist.pop(2) #odstraní z pole danou pozici
+print(mylist)
+ 
+print(mylist2)
+mylist2.clear()
+print(mylist2)
+ 
+del mylist2
+#print(mylist2)
+ 
+for i in mylist:
+    print(i)
+ 
+for i in range(len(mylist)):
+    print(i, mylist[i])
+        
+abeceda = ["A", "F", "C", "G", "P", "L", "X", "Z"]
+print(abeceda)
+abeceda.sort() #seřadí abecedu podle písmen
+print(abeceda)
+
+abeceda.sort(reverse=True)
+print(abeceda)
+
+mylist.sort()
+print(mylist)
+
+mylist.sort(key=str.lower)
+print(mylist)
+
+nums=[100,50,65,82,23]
+nums.sort() #seřadí čísla podle velikosti
+print(nums)
+
+nums.reverse()
+print(nums)
+
+mylist2 = mylist
+print(mylist)
+print(mylist2)
+
+mylist2[0] = "rajče"
+print(mylist2)
+print(mylist)
+
+copylist = mylist.copy()
+copylist[0] = "pistácie"
+print(mylist)
+print(copylist)
