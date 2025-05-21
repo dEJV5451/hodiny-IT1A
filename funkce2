@@ -1,0 +1,19 @@
+x = 5
+y = 3
+
+print(x+y)
+print(x*y)
+print(x/y)
+print(x-y)
+print(x**y)
+print(x**(1/y))
+
+def scitani(promenna1, promenna2):
+    return promenna1 + promenna2
+
+print(scitani(x, y))
+
+def sqr(a: float, n: float):
+    return a**(1/n)
+
+print (sqr(25, 2))
