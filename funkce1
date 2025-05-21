@@ -1,0 +1,12 @@
+x = 5
+y = 3
+
+def sqr(a: float, n: float) -> float :
+    """
+        funkce pro výpočet mocniny:
+        a: zadáváte mocněnce
+        n: zadáváte mocnitele
+    """
+    return a**(1/n)
+
+print (sqr(25, "Ano"))
