@@ -1,0 +1,7 @@
+def hrac(name:str):
+    return name + " útočník"
+
+print(hrac("Jan"))
+print(hrac("Jiří"))
+print(hrac("Zdeněk"))
+print(hrac("Bedřich"))
